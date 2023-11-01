@@ -17,9 +17,9 @@ export class PogodaService {
 			})
 		} catch (error) {
 			if (error.message){
-				this.openWeatherData.err = error.message
+				throw this.openWeatherData.err = error.message
 			} else {
-				this.openWeatherData.err = "Error: Unknown error fetch OpenWeather"
+				throw this.openWeatherData.err = "Error: Unknown error fetch OpenWeather"
 			} 
 		}finally{
 			console.log("fetchOpenWeather - END")
