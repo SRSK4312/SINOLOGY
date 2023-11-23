@@ -5,11 +5,8 @@
   $ sudo apt update
   $ sudo apt install nodejs
   $ node -v
-  ```
-  ```bash
-  $ sudo apt update
-  $ sudo apt install nodejs
-  $ node -v
+  Output
+  v10.19.0
   ```
 Создать папку проекта, скопировать в неё git репозиторий при помощи команды git-clone
 
