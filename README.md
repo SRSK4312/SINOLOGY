@@ -1,6 +1,16 @@
 ## Копирование на сервер
-Подключится к серверу по ssh или другими методами,
-установить Node, npm на сервер. 
+Подключится к серверу по ssh или другими методами.
+  #Установить Nodejs и npm.
+  ```bash
+  $ sudo apt update
+  $ sudo apt install nodejs
+  $ node -v
+  ```
+  ```bash
+  $ sudo apt update
+  $ sudo apt install nodejs
+  $ node -v
+  ```
 Создать папку проекта, скопировать в неё git репозиторий при помощи команды git-clone
 
 ## Иницализация
