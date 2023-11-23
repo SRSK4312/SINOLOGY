@@ -1,11 +1,3 @@
-export class commandPogodaDto {
-	token?: string;
-	user_id?: string;
-	username?: string;
-	text: string;
-	status?: null | number
-}
-
 export class returnPogodaDto {
 	temperature: number;
 	description: string;

@@ -1,6 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { commandPogodaDto, openWeatherResponse, returnPogodaDto } from './pogoda.dto';
+
 import { env } from 'process';
+import { openWeatherResponse, returnPogodaDto } from '../dto/pogoda.dto';
+import { commandSinoBot } from '../dto/sinobot.dto';
 
 @Injectable()
 export class PogodaService {
@@ -41,11 +43,7 @@ export class PogodaService {
 	}
 
 
-	async createAnswer(request: commandPogodaDto) {
-
-		if (request.token != env.COMMAND_POGODA_KEY){
-			return {text: 'Недействительный токен доступа'}
-		}
+	async createAnswer(request: commandSinoBot) {
 
 		if (this.openWeatherData.dt){
 			const now = new Date().getTime() / 1000

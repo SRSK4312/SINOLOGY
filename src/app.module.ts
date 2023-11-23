@@ -1,8 +1,13 @@
-import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { PogodaModule } from './pogoda/pogoda.module';
+import { Module } from '@nestjs/common';
+import { SinobotModule } from './sinobot/sinobot.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), PogodaModule],
+  imports: [
+		ConfigModule.forRoot({
+			isGlobal: true
+		}),
+		SinobotModule
+	],
 })
 export class AppModule {}
