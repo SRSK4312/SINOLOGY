@@ -20,18 +20,18 @@
     ```
 
 # Иницализация
-```bash
-$ npm install
-```
+  ```bash
+    $ npm install
+  ```
 
 # Запуск приложения
-```bash
-# production mode
-$ npm run start:prod
-
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-```
+  ```bash
+    # production mode
+    $ npm run start:prod
+    
+    # development
+    $ npm run start
+    
+    # watch mode
+    $ npm run start:dev
+  ```
