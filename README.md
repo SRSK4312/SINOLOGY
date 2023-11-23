@@ -1,6 +1,6 @@
 # Копирование на сервер
-  ## - Подключится к серверу по ssh или другими методами.
-  ## - Установить Nodejs и npm.
+  - *Подключится к серверу по ssh или другими методами.*
+  - *Установить Nodejs и npm.*
     ```bash
     $ sudo apt update
     $ sudo apt install nodejs
@@ -8,13 +8,13 @@
     Output
     v10.19.0
     ```
-  ## - Установить git
+  - *Установить git*
     ``` bash
     $ sudo apt update
     $ sudo apt install git
     $ git --version
     ```
-  ## - Создать папку проекта, скопировать в неё git репозиторий при помощи команды git-clone
+   - *Создать папку проекта, скопировать в неё git репозиторий при помощи команды git-clone*
     ``` bash
     $ git clone {repository URL}
     ```
