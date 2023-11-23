@@ -90,11 +90,6 @@ export class OrderService {
 		if (this.orderInfo.length <= 0) {
 			return  {text : 'Заказ не найден :thinking:'} 
 		} 
-
-		// let orderNums = []
-		// this.orderInfo.forEach(item => {
-		// 	if (!orderNums.includes(item.OrderNo)) orderNums.push(item.OrderNo)
-		// })
 		
 		console.log(this.orderInfo);
 
@@ -143,7 +138,7 @@ export class OrderService {
 
 		if (resultOrders.length <= 0) return {text: ':warning: Непредвиденная ошибка, обратитесь с системному администратору'}
 
-		resultTxt += `Нашел :grin:\n\n`
+		resultTxt += `Нашел :grin:\n`
 		resultOrders.forEach(order => {
 			resultTxt += `- ${order.title}\n`
 			if (order.items){
@@ -151,7 +146,8 @@ export class OrderService {
 					resultTxt += `    `
 					if (item.pos) resultTxt += `${item.pos} `
 					if (item.name) resultTxt += `${item.name} `
-					if (item.size) resultTxt += `\n    Размер: ${item.size}`
+					if (item.size) resultTxt += `\n        Размер: ${item.size}`
+
 					resultTxt += `\n    `
 
 					if (item.scanDate && item.scanDate != null) {
@@ -161,7 +157,7 @@ export class OrderService {
 						if (item.scanStatus){
 							resultTxt += this.statusobj[item.scanStatus] ? this.statusobj[item.scanStatus] : 'Неизвестный статус (ОТК), уточните у отдела ОТК'
 						}
-						resultTxt += '\n\n'
+						resultTxt += '\n'
 					} else resultTxt += `    Статус: На этапе производства \n`
 				})
 			}
