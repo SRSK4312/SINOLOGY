@@ -151,7 +151,7 @@ export class OrderService {
 					resultTxt += `    `
 					if (item.pos) resultTxt += `${item.pos} `
 					if (item.name) resultTxt += `${item.name} `
-					if (item.size) resultTxt += `\n Размер: ${item.size}`
+					if (item.size) resultTxt += `\n    Размер: ${item.size}`
 					resultTxt += `\n    `
 
 					if (item.scanDate && item.scanDate != null) {
