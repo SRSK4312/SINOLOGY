@@ -155,7 +155,7 @@ export class OrderService {
 					resultTxt += `\n    `
 
 					if (item.scanDate && item.scanDate != null) {
-						const formatDate = `${item.scanDate.getDate()}.${item.scanDate.getMonth()}.${item.scanDate.getFullYear()} г.`
+						const formatDate = `${item.scanDate.getDate()}.${item.scanDate.getMonth()+1}.${item.scanDate.getFullYear()} г.`
 						resultTxt += `    Статус: ${formatDate} `
 
 						if (item.scanStatus){
