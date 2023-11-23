@@ -42,7 +42,7 @@ export class SinobotService {
 		}
 
 		// Погода 
-		if ( reqTXT === 'погода' || reqTXT === 'pogoda' || reqTXT === '/pogtest' ){
+		if ( reqTXT === 'погода' || reqTXT === 'pogoda' || reqTXT === '/pogoda' ){
 			return this.pogodaService.createAnswer(request)
 		} 
 
