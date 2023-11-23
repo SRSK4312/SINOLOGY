@@ -26,11 +26,11 @@
 
 # Запуск приложения
   ```bash
-    # production mode
-    $ npm run start:prod
-    
     # development
     $ npm run start
+
+    # production mode
+    $ npm run start:prod
     
     # watch mode
     $ npm run start:dev
