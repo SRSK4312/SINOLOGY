@@ -161,7 +161,7 @@ export class OrderService {
 						if (item.scanStatus){
 							resultTxt += this.statusobj[item.scanStatus] ? this.statusobj[item.scanStatus] : 'Неизвестный статус (ОТК), уточните у отдела ОТК'
 						}
-						resultTxt += '\n'
+						resultTxt += '\n\n'
 					} else resultTxt += `    Статус: На этапе производства \n`
 				})
 			}
