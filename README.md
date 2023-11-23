@@ -14,7 +14,7 @@
       $ sudo apt install git
       $ git --version
     ```
-   - *Создать папку проекта, скопировать в неё git репозиторий при помощи команды git-clone*
+  - *Создать папку проекта, скопировать в нее git репозиторий, при помощи git-clone*
     ``` bash
       $ git clone {repository URL}
     ```
