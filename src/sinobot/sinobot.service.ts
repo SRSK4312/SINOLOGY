@@ -19,12 +19,6 @@ export class SinobotService {
 													:question: Для того что бы узнать статус заказа напиши мне его номер и я постараюсь тебе помочь.`
 
 
-	// // Цеховой номер
-	// validTaskNo(taskNo : string) : boolean{ return (/^\d+$/.test(taskNo) )}
-		
-	// // Офисный номер
-	// validOrderNo (orderNo: string ) : boolean { return ( orderNo.indexOf('-') >= 0 && orderNo.indexOf(' ') < 0) }
-
 	createAnswer(request : commandSinoBot){
 		// Проверка токена
 		if (request.token != env.SINOBOT_API_KEY){
