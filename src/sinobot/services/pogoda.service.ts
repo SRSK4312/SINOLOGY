@@ -60,18 +60,7 @@ export class PogodaService {
 
 
 		return {
-			text: `
-				-------------------------------------------------------------
-					  Сегодня ${new Date().toLocaleString('ru', {year: 'numeric',	month: 'long',day: 'numeric'})} в Кирово-Чепецке 
-					  Температура: ${this.returnData.temperature} °С, ощущается как: ${this.returnData.feels_like} °С\n
-					  Погодные условия: 
-					    ${this.returnData.description}
-					    Скорость ветра: ${this.returnData.wind_speed} м/c
-					    Влажность: ${this.returnData.humidity} %
-					    Восход: ${this.returnData.sunrise}
-					    Закат: ${this.returnData.sunset}
-				-------------------------------------------------------------
-			`,
+			text: `Сегодня ${new Date().toLocaleString('ru', {year: 'numeric',	month: 'long',day: 'numeric'})} в Кирово-Чепецке\nТемпература: ${this.returnData.temperature} °С, ощущается как: ${this.returnData.feels_like} °С\n  Погодные условия: ${this.returnData.description}\n  Скорость ветра: ${this.returnData.wind_speed} м/c\n  Влажность: ${this.returnData.humidity} %\n  Восход: ${this.returnData.sunrise}  Закат: ${this.returnData.sunset}`
 		}
   }
 }
